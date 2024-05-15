@@ -1,0 +1,459 @@
+body{
+    overflow: hidden;
+    
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+}    
+
+.gov{
+  margin: 10px !important;
+  color: rgb(187, 59, 187) !important;
+  text-align: center !important;
+}
+ 
+.img1{
+  border: 3px solid !important;
+  overflow: hidden;
+  margin-left: 2px !important;
+}
+
+
+body{
+  overflow: scroll !important;
+}
+
+.bx-store{
+  margin-right: 3px !important;
+}
+
+.title  {
+  margin-left: 1100px !important;
+ 
+}
+
+.title a{
+  text-decoration: none;
+  color: gold !important;
+}
+
+#nav{
+  background-color: blueviolet;
+}
+.container{
+  margin-top: 5px !important;
+  background-color: white;
+}
+.list{
+  list-style: none !important;
+  margin-top: 5px !important;
+}
+
+.list li{
+  margin-top: 5px !important;
+  display: inline-block;
+  padding-left: 6px;
+  
+}
+
+.list li a{
+  text-decoration: none !important;
+  color: white !important;
+  font-weight: bold !important;
+}
+.list li a:hover{
+  color: aqua !important;
+
+}
+
+#home a{
+  color: red !important;
+}
+  .btn{
+  margin-left: 5px !important;
+  
+  margin-bottom: 10px !important;
+}   
+
+/* #search{
+   margin-left: 40px !important; 
+  margin-top: 20px !important;
+} */
+
+#search {
+  /* margin: 20px 0 0 40px; */
+  margin-top: 10PX;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+  font-size: 16px;
+  outline: none;
+}
+
+#search:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#middle{
+  margin-top: 10px !important;
+  background-color: aqua !important;
+ 
+}
+
+.col-md-9{
+  margin-top: 8px !important;
+}
+
+.col-md-3{
+  margin-top: 8px !important;
+}
+
+#mid{
+  max-width: 800px;
+  width: auto;
+  height: 500px;
+  border: 7px solid #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+.image-box{ 
+
+  display: flex;
+  height: 100%;
+  width: 400%;
+  justify-content: space-between;
+
+}
+.image-box{
+  animation: imgBox 20s linear infinite;
+}
+@keyframes imgBox{
+  0%{
+    margin-left: 0;
+  }
+  100%{
+    margin-left: -300%;
+  }
+}
+.image-box:hover{
+  animation-play-state: paused;
+}
+.image-box .image{
+  width: calc(100% - 100px);
+  height: 100%;
+}
+.image-box img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.sidegal{
+  text-decoration: none;
+  list-style: none !important;
+}
+
+
+
+#hov{
+  text-decoration: none !important;
+  color: red !important;
+  margin-left: 10px !important;
+}
+
+#hov:hover{
+     color: aqua !important;
+}
+         
+.sidelinks{
+  border: greenyellow !important;
+ 
+  margin-top: 5px !important;
+  height: 70vh;
+  overflow-y: scroll;
+  justify-content: center;
+
+}       
+.sidelinks::-webkit-scrollbar {
+  display: none; 
+}
+
+.col-md-3{
+  margin-left: 50px !important;
+}      
+
+.col-md-19{
+  margin-left: 10px !important;
+}
+     
+.sidegal li a{
+  text-decoration: none !important;
+}
+.sidegal li a:hover{
+  color: red !important;
+
+  
+}
+
+
+
+#webname{
+  color: gold !important;
+  margin-left: 900px !important;
+  margin-top: 50px !important;
+  margin-bottom: 10px !important;
+  text-decoration: double;
+}
+
+#s{
+  border: 3px solid black;
+  object-fit: cover !important;
+      
+}
+
+ #s1{
+   margin-left: 40px !important;
+} 
+
+.list_link{
+  text-decoration: none !important;
+   
+
+}
+
+#img1{
+  height: 200px !important;
+  width: 250px !important;
+  margin-left: 100px !important;
+  border: 3px solid !important;
+}
+
+#img2{
+  height: 200px !important;
+  width: 250px !important;
+  margin-left: 100px !important;
+ 
+}
+
+#link_c{
+  text-align: center !important;
+  color: darkmagenta !important;
+}
+.link_s{
+  margin-left: 100px !important;
+  font-weight: bold !important;
+ 
+  list-style: disc !important;
+}
+
+.link_s li a{
+  text-decoration: none !important;
+}
+
+#link_h{
+  margin-left: 100px !important;
+  color: red !important;
+  font-weight: bold !important;
+  
+}
+
+#detail{
+  margin-left: 900px !important;
+  width: 200px !important;
+  margin-top: 15px !important;
+}
+
+
+#tech{
+  height: 250px !important;
+  width: 350px !important;
+  margin-top: 15px !important;
+  margin-bottom: 15px !important;
+  border: 2px solid !important;
+
+}
+
+
+
+
+#tech_head{
+  color: purple !important;
+  text-align: center !important;
+  font-weight: bolder !important;
+}
+
+
+.col-md-4 {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px; 
+}
+
+.col-md-4 img {
+  transition: transform 0.3s ease;
+}
+
+.col-md-4:hover img {
+  transform: scale(1.1);
+}
+
+.tech_image {
+  position: relative; 
+}
+
+#tech_name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  transition: bottom 0.3s ease;
+  margin-bottom: 5px;
+  font-weight: bold; 
+  font-size: 16px; 
+  background-color: rgba(0, 0, 0, 0.0); 
+}
+
+.tech_image span {
+  display: block; 
+}
+
+
+
+
+
+.col-md-4:hover #tech_name {
+  bottom: -50px;
+}
+
+
+
+/* 
+ body {
+  overflow: hidden;
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/003/054/771/original/the-farmer-is-working-on-his-field-in-the-evening-free-video.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+}
+
+.title {
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.title a {
+  text-decoration: none;
+  color: gold;
+}
+
+.container {
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.list {
+  list-style: none;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.list li {
+  margin-right: 20px;
+}
+
+.list li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.list li a:hover {
+  color: aqua;
+}
+
+#middle {
+  margin-top: 20px;
+}
+
+.gov {
+  margin: 10px 0 !important;
+  color: rgb(187, 59, 187) !important;
+  text-align: center !important;
+}
+
+.img1 {
+  border: 3px solid;
+  overflow: hidden;
+  margin-left: 2px;
+}
+
+.sidegal li a:hover {
+  color: red;
+}
+
+#webname {
+  color: gold;
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  text-decoration: double;
+} */
+
+#detail {
+  margin-left: auto;
+  margin-right: 20px;
+  width: 200px;
+  margin-top: 15px;
+}
+
+#tech_head {
+  color: purple;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.col-md-4 {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px; 
+}
+
+.col-md-4 img {
+  transition: transform 0.3s ease;
+}
+
+.col-md-4:hover img {
+  transform: scale(1.1);
+}
+
+.tech_image {
+  position: relative; 
+}
+
+#tech_name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  transition: bottom 0.3s ease;
+  margin-bottom: 5px;
+  font-weight: bold; 
+  font-size: 16px; 
+  background-color: rgba(0, 0, 0, 0.0); 
+}
+
+.col-md-4:hover #tech_name {
+  bottom: -50px;
+}

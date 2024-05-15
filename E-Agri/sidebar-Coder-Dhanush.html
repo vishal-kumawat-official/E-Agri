@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
+     <link rel="stylesheet" href="sidebar.css">
+    <!-- Boxicons CDN Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body style="background:transparent url('https://static.vecteezy.com/system/resources/thumbnails/003/054/771/original/the-farmer-is-working-on-his-field-in-the-evening-free-video.jpg') no-repeat center center /cover">
+<!--  
+  <div class="sidebar">
+    <div class="logo-details">
+      
+        <div class="logo_name">E-AGRI</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+          <i class='bx bx-search' ></i> 
+           <input type="text" placeholder="Search..." id="search"> 
+         <span class="tooltip">Search</span>
+      
+      <li>
+        <a href="#">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+         <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+       <a href="#">
+         <i class='bx bx-user' ></i>
+         <span class="links_name">User</span>
+       </a>
+       <span class="tooltip">User</span>
+     </li>
+     <li>
+       <a href="file:///C:/Users/vishn/OneDrive/Desktop/Real%20projects/forms/farmer.html"  target="_blank">
+        <i class='bx bx-food-menu'></i>
+         <span onclick="open_form()" class="links_name">Rential form</span>
+       </a>
+       <span class="tooltip">Messages</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-pie-chart-alt-2' ></i>
+         <span class="links_name">Analytics</span>
+       </a>
+       <span class="tooltip">Analytics</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-folder' ></i>
+         <span class="links_name">File Manager</span>
+       </a>
+       <span class="tooltip">Files</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-cart-alt' ></i>
+         <span class="links_name">Order</span>
+       </a>
+       <span class="tooltip">Order</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-heart' ></i>
+         <span class="links_name">Saved</span>
+       </a>
+       <span class="tooltip">Saved</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-cog' ></i>
+         <span class="links_name">Setting</span>
+       </a>
+       <span class="tooltip">Setting</span>
+     </li>
+      <li class="profile">
+         <i class='bx bx-log-out' id="log_out" ></i>
+     </li> 
+    </ul>
+  </div>
+   -->
+
+<div class="title"><a href=""><h2><b><i class='bx bx-store'></i>E AGRI</b></h2></a></div>
+  <div class="container">
+    <div class="row justify-content-center" id="nav">
+      <div class="col-md-7">
+        <ul class="list">
+            <li id="home"><a href="file:///C:/Users/vishn/OneDrive/Desktop/Team/Hackathon/landing%20page/index.html#">HOME</a></li>
+            
+            <li><a href="file:///C:/Users/vishn/OneDrive/Desktop/Team/Hackathon/forms/Equipment/Get/get.html?">GET </a></li>
+            <li><a href="file:///C:/Users/vishn/OneDrive/Desktop/Team/Hackathon/forms/Equipment/set/rent.html">RENT </a></li>
+            <li><i class='bx bx-cloud-lightning'></i><a target="_blank" href="https://www.windy.com/">WEATHER DETAILS</a></li>
+            <li><a href="file:///C:/Users/vishn/OneDrive/Desktop/Team/Hackathon/forms/Yeild/Yeild.html?" target="_blank">YEILD DETAILS</a></li>
+        </ul>
+    </div>
+    <div class="col-md-5">
+        <input type="search" id="search" placeholder="What's on your mind" >
+        
+        <img id="s_img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAVFJREFUSEvVleExBEEQRt9FQAoiQATIgAgQASJABIgAESACZEAEyIAIqKd6qub2Zmen7N4P/eu2dqdf99dfz81YcsyWnJ8+wCpwBOwCG1HEC3APXAGfrYWVAAfABSCkFCY/AW5aIF2Aya/j4ANwCTzF8zZwBmzF8150VOXkACt+i8oPKxUKOQ2Z1obkygHpoJWrfS3syk7Oo6veb3OAQ1wHdjJZ+g4q1yPgmc1aJTngOz5stW7T92MBXxW3/db7V4mc0R3wDChX0wzSkF0mLdgyZPdBKzcBtOk7sBLO0CGlSIV8xJZXt7o70NS6ibWiyZTBUAr9nyQZtGh3Bqlat9m27aQUDtb3wrSpv2/7NKpddsexcO6G8RpXgwmVJe2N77yX3P6FaPV86Wx+b/VCxgBS0v2MvtDJWMAgZApAFzJ3E08FSBCtPfdHNCWg6NT/D/gBeOVFGZeTouUAAAAASUVORK5CYII="/>
+        <button onclick="open_form()" class="btn btn-outline-dark">SIGN UP</button>
+        <button onclick="open_form()" class="btn btn-outline-dark">LOG-IN</button>
+    </div>
+    </div>
+
+    <div class="row" id="middle">
+  <div class="col-md-9 shadow p-3 mb-5 bg-body rounded" id="mid">
+  <!-- <div class="mid"> -->
+    <h3 class="gov"><b>Government Schemes</b></h3>
+    <div class="image-box">
+      <div class="image">
+        <img  class="img1" src="https://leverageedu.com/blog/wp-content/uploads/2021/06/Government-Schemes-in-India.png">
+      </div>
+      <div class="image">
+        <img  class="img1" src="https://www.yojanahindipm.in/wp-content/uploads/2021/07/IMG_20210722_234414.jpg">
+      </div>
+      <div class="image">
+        <img  class="img1" src="http://marugujaratupdates.com/wp-content/uploads/2022/06/kisan-730_1608103861.jpg">
+      </div>
+      <div class="image">
+        <img  class="img1" src="https://images.news18.com/telugu/uploads/2021/07/1625896762_media-handler-3.jpg">
+      </div>
+    </div>
+  <!-- <button class="btn btn-success">About us</button> -->
+</div>
+  
+<div class="col-md-3 shadow p-3 mb-5 bg-body rounded">
+<div class="sidelinks">
+  <h3><a href="" id="hov"><b>Important Links</b></a></h3>
+  <ul class="sidegal">
+  <li><a href="https://holycowlakshyam.co.in/product/cow-dung-pots/?gclid=EAIaIQobChMI6P710ZDh-gIVVn8rCh0PmweHEAAYAiAAEgIpKfD_BwE" target="_blank"><img id="s"src="C:\Users\vishn\OneDrive\Desktop\Team\Hackathon\img\t1.jpg" alt=""><span id="s1"> Small plants</span></a></li>
+  <li><a href="https://sankalptaru.org/project-hasiru-sankalpa-karnataka/?gclid=EAIaIQobChMI_8DT4Y_h-gIVNZhmAh3g0wnJEAAYASAAEgJvMvD_BwE" target="_blank"><img id="s"src="C:\Users\vishn\OneDrive\Desktop\Team\Hackathon\img\t2.jpg" alt=""><span id="s1"> Planting sapling</span></a></li>
+  <li><a href="https://wcd.nic.in/bbbp-schemes" target="_blank"><img id="s"src="C:\Users\vishn\OneDrive\Desktop\Team\Hackathon\img\t5.jpg" alt=""><span  id="s1"> Save girl child </span></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="row ">
+  <h2 id="link_c"><b>Links for Schemes</b></h2>
+  <div class="col-md-6">
+    <img id="img1" src="https://gumlet.assettype.com/theceo/import/2020/06/govt-schemes.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max" alt="">
+    <h3 id="link_h">Centeral Schemes</h3>
+    <ul class="link_s">
+      <li ><a href="">PM kisan yojna</a></li>
+      <li><a href="">PM kisan samman</a></li>
+      <li><a href="">Agriculture infrastructure fund</a></li>
+      <li><a href="">Krishi yantra anudan vitran karyakrm</a></li>
+      <li><a href="">Fasal bima yojna</a></li>
+  </ul>
+  </div>
+  <div class="col-md-6">
+    <img id="img2"  src="https://examsdaily.in/wp-content/uploads/2019/02/State-Government-Schemes.jpg" alt="">
+    <h3 id="link_h"><b>State Schemes</b></h3>
+    <ul class="link_s">
+      <li><a href="">PM kisan yojna</a></li>
+      <li><a href="">PM kisan samman</a></li>
+      <li><a href="">Agriculture infrastructure fund</a></li>
+      <li><a href="">Krishi yantra anudan vitran karyakrm</a></li>
+      <li><a href="">Fasal bima yojna</a></li>
+  </ul>
+  </div>
+  <div class="col-md-5">
+    <button onclick="open_detail()" id="detail" class="btn btn-success">Click for more details</button>
+  </div>
+</div>
+<div class="row">
+  <h2 id="tech_head">Different farming techniques</h2>
+  <div class="col-md-4">
+    <img id="tech" src="https://cdn.shopify.com/s/files/1/0579/7924/0580/t/18/assets/Making-polyhouse.jpg?v=1661876350" alt="">
+    <span id="tech_name">Polyhouse Farming</span>
+  </div>
+  <div class="col-md-4">
+    <img  id="tech"src="https://guardian.ng/wp-content/uploads/2018/09/drip-irrigation-kit.jpg" alt="">
+    <span id="tech_name">Drip Farming</span>
+  </div>
+  <div class="col-md-4">
+    <img  id="tech"src="https://emrojapan.com/files/news/main/0f9c7143d04e354dd36dce3b96fd108a.png" alt="">
+    <span id="tech_name">Aquaponic Farming</span>
+  </div>
+  <div class="col-md-4">
+    <img  id="tech"src="https://i.ytimg.com/vi/SHLSQm_6G2M/maxresdefault.jpg" alt="">
+    <span id="tech_name">Commercial Farming</span>
+  </div>
+  <div class="col-md-4">
+    <img  id="tech"src="https://cropforlife.com/wp-content/uploads/2021/02/Screenshot_47.jpg" alt="">
+    <span id="tech_name">Plantation Farming</span>
+  </div>
+  <div class="col-md-4">
+    <img  id="tech"src="https://thumbs.dreamstime.com/b/poultry-broiler-housing-farm-business-poultry-broiler-farm-business-group-white-chickens-parent-stock-modern-housing-132851029.jpg" alt="">
+    <span id="tech_name">Poultry Farming</span>
+  </div>
+  <div class="col-md-5">
+    <button onclick="open_detail1()" id="detail" class="btn btn-success">Click for more details</button>
+  </div>
+</div>
+</div>
+
+
+  <script>
+    let sidebar = document.querySelector(".sidebar");
+    let closeBtn = document.querySelector("#btn");
+    let searchBtn = document.querySelector(".bx-search");
+  
+    closeBtn.addEventListener("click", ()=>{
+      sidebar.classList.toggle("open");
+      menuBtnChange();//calling the function(optional)
+    });
+  
+    searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+      sidebar.classList.toggle("open");
+      menuBtnChange(); //calling the function(optional)
+    });
+  
+    // following are the code to change sidebar button(optional)
+    function menuBtnChange() {
+     if(sidebar.classList.contains("open")){
+       closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+     }else {
+       closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+     }
+    }
+
+    function open_form()
+    {
+      window.open("file:///C:/Users/vishn/OneDrive/Desktop/Team/Hackathon/forms/Sign-up/signup1.html");
+      // window.location.href = "file:///C:/Users/vishn/OneDrive/Desktop/Team/Hackathon/forms/Sign-up/signup.html";
+    }
+
+    function open_detail()
+    {
+      window.open("https://www.india.gov.in/my-government/schemes");
+    }
+
+    function open_detail1()
+    {
+      window.open("https://www.agrifarming.in/modern-farming-methods-techniques");
+    }
+    </script> 
+</body>
+</html>
+
+

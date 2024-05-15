@@ -1,0 +1,106 @@
+/* Basic styling for the sign-up page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #43cea2, #185a9d); /* Gradient background */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centers the content vertically and horizontally */
+}
+
+.container {
+    width: 100%;
+    max-width: 400px; /* Ensures the form does not exceed this width */
+}
+
+.signup-card { /* Styling for the card-based form */
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px; /* Ample padding to keep content inside the border */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.signup-card h2 { /* Centered heading */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group { /* Space between input fields */
+    margin-bottom: 15px; 
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px; /* Adjusted font size for clarity */
+    color: #333; /* Label color */
+}
+
+.input-group input { /* Ensures inputs are within the border */
+    width: 97%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s; /* Smooth transition on focus */
+}
+
+.input-group input:focus {
+    border-color: #43cea2; /* Border color changes on focus */
+}
+
+.input-group button { /* Styling for the submit button */
+    width: 97%;
+    padding: 10px;
+    background-color: #43cea2; 
+    color: white; /* White text on the button */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Animation on hover */
+}
+
+.input-group button:hover { /* Hover effect for the button */
+    background-color: #185a9d; /* Darker color on hover */
+}
+
+.extra-links {
+    text-align: center;
+}
+
+.extra-links a {
+    color: #43cea2; /* Color to match the design */
+    text-decoration: none;
+}
+
+.extra-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Toast notification styling for the top position */
+.toast {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stays in position regardless of scrolling */
+    top: 20px; /* Position at the top */
+    left: 50%; /* Centers the toast horizontally */
+    transform: translateX(-50%); /* Centers the toast relative to its parent */
+    background-color: greenyellow; /* Dark background */
+    color: black; /* White text */
+    padding: 10px 20px; /* Padding for comfort */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    animation: fadeout 4s forwards; /* Animation for fading out */
+}
+
+/* Animation for fading out */
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1; /* Keep visible */
+    }
+    100% {
+        opacity: 0; /* Fade out at the end */
+    }
+}

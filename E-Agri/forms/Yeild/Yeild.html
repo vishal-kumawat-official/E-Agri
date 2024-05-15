@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yield Form | E-Agri</title>
+    <link rel="stylesheet" href="Yeild.css"> <!-- Reference to the CSS -->
+</head>
+<body>
+    <div class="container">
+        <div id="toast" class="toast">Details saved successfully!</div>
+        <div class="form-card"> <!-- Card-based form for better styling -->
+            <h2>Yield Ready Form</h2>
+            <form id="Yeild"> <!-- Corrected ID -->
+                <!-- Input fields with consistent design -->
+                <div class="input-group">
+                    <label for="email">Enter Your Email ID</label>
+                    <input type="text" id="email" placeholder="Enter your farm ID..." />
+                </div>
+
+                <div class="input-group">
+                    <label for="crop">Your crop</label>
+                    <input type="text" id="crop" placeholder="Enter your crop..." /> 
+                </div>
+                                        
+                <div class="input-group">   
+                    <label for="quan">Crop Quantity (in tons)</label>
+                    <input type="text" id="quan" placeholder="Enter crop quantity..." />
+                </div>
+
+                <div class="input-group">
+                    <label for="from">From Date</label>
+                    <input type="date" id="from" />
+                </div>
+
+                <div class="input-group">
+                    <label for="to">To Date</label>
+                    <input type="date" id="to" />
+                </div>
+
+                <div class="input-group"> <!-- Changed submit button style -->
+                    <button type="submit" id="submit" class="btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script type="module" src="Yeild.js" defer></script>
+
+
+    <!-- <script src="Yeild.js"></script> Corrected reference to JavaScript file -->
+</body>
+</html>

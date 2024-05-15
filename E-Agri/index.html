@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>E-AGRI</title>
+</head>
+<body>
+
+    <header id="header">
+        <a href="#" class="logo">E-AGRI</a>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2 id="text"><span>It's time for a cutting-edge</span><br>Farming</h2>
+        <img src="bird1.png" id="bird1">
+        <img src="bird2.png" id="bird2">
+        <img src="forest.png" id="forest">
+        <a href="../forms/Sign-up/signup1.html" id="btn">Explore</a>
+        <img src="rocks.png" id="rocks">
+        <img src="water.png" id="water"> 
+    </section>
+    
+    <div class="sec">
+        <div class="about">
+            <h2>About the Center</h2>
+            <p>According to the government, there are around 14 crore farmers in India, but only 3 crore know how to leverage technology to their advantage. Introducing an app or website without ensuring accessibility to all farmers is futile. Enter the Agri Centre.</p>
+            <p>The Agri Centre will serve as a hub for farmers and middlemen in the area, providing and collecting essential data. It will display Mandi rates from all states and districts, empowering farmers to negotiate better.</p>
+        </div>
+        <div class="about">
+            <h2>About the Website</h2>
+            <p>The website equips Agri Centre employees with management tools to maintain records of local farmers efficiently. Centralized data accessibility simplifies information retrieval for all parties involved.</p>
+            <p>Various forms pertaining to yield, equipment rental, and government schemes are available on the website, streamlining administrative processes. Additionally, farmers can search for government schemes and receive SMS alerts based on their eligibility.</p>
+        </div>
+    </div>
+
+    <script>
+        let text=document.getElementById('text');
+        let bird1=document.getElementById('bird1');
+        let bird2=document.getElementById('bird2');
+        let btn=document.getElementById('btn');
+        let rocks=document.getElementById('rocks');
+        let forest=document.getElementById('forest');
+        let water=document.getElementById('water');
+        let header=document.getElementById('header');
+
+        window.addEventListener('scroll', function(){
+            let value=window.scrollY;
+            text.style.top=50+value*-0.5+'%';
+            bird1.style.top=value*-1.5+'px';
+            bird1.style.left=value*2+'px';
+            bird2.style.top=value*-1.5+'px';
+            bird2.style.left=value*-5+'px';
+            btn.style.marginTop=value*1.5+'px';
+            rocks.style.top=value*-0.12+'px';
+            forest.style.top=value*0.25+'px';
+            header.style.top=value*0.5+'px';
+        })
+    </script>
+</body>
+</html>

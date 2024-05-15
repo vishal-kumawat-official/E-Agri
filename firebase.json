@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "E-Agri",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

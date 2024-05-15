@@ -1,0 +1,83 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farming Tools Gallery</title>
+<link rel="stylesheet" type="text/css" href="SellCrop.css">
+
+</head>
+<body>
+<div class="gallery-container">
+  <h2 class="gallery-header">Choose Crop Type</h2>
+  <div class="gallery">
+  <div class="gallery-item">
+    <a href="../Yeild/Yeild.html"><div class="image"><img src="https://images.saymedia-content.com/.image/t_share/MjAzMDE3OTAzNDEzOTk0Njc4/crop-names-in-hindi-and-english.jpg" alt="Farming Tool 1"></div>
+      <div class="image-name">Corn</div></a>
+  </div>
+  <div class="gallery-item">
+    <a href="../Yeild/Yeild.html"><div class="image"><img src="https://cdn.britannica.com/89/140889-050-EC3F00BF/Ripening-heads-rice-Oryza-sativa.jpg" alt="Farming Tool 2"></div>
+      <div class="image-name">Rice</div></a>
+  </div>
+  <div class="gallery-item">
+    <a href="../Yeild/Yeild.html"><div class="image"><img src="https://cdn.downtoearth.org.in/library/large/2022-11-29/0.83936300_1669732931_wheat.jpg
+        " alt="Farming Tool 3"></div>
+        <div class="image-name">Wheat</div></a>
+  </div>
+  <div class="gallery-item">
+    <a href="../Yeild/Yeild.html"><div class="image"><img src="https://live.staticflickr.com/8176/8002569857_d4980fa8b8_b.jpg" alt="Farming Tool 4"></div>
+      <div class="image-name">Bajra</div></a>
+  </div>
+  <div class="gallery-item">
+    <a href="../Yeild/Yeild.html"><div class="image"><img src="https://www.thespruce.com/thmb/QJMGcDKS7O7LicSb3kowNg-tNvM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/garden-vs-snow-and-sugar-snap-1403487-01-75756cadab74407c8d2db846f2f5ed8e.jpg" alt="Farming Tool 5"></div>
+      <div class="image-name">Peas</div></a>
+  </div>
+  <div class="gallery-item">
+    <a href="../Yeild/Yeild.html"><div class="image"><img src="https://miro.medium.com/v2/resize:fit:960/0*AZhhiA7beCRygMSd.jpg" alt="Farming Tool 6"></div>
+      <div class="image-name">Tomato</div></a>
+  </div>
+  <div class="gallery-item">
+    <a href="../Yeild/Yeild.html"><div class="image"><img src="https://organicbazar.net/cdn/shop/products/Untitled-design-2022-06-05T114519.520.jpg?v=1694168284" alt="Farming Tool 6"></div>
+      <div class="image-name">Mustard</div></a>
+  </div>
+  <div class="gallery-item">
+    <a href="../Yeild/Yeild.html"><div class="image"><img src="https://www.pepperhub.in/wp-content/uploads/2024/01/The-Sugarcane-Cultivation-in-India.jpg" alt="Farming Tool 6"></div>
+      <div class="image-name">SugarCane</div></a>
+  </div>
+  <div class="gallery-item">
+    <a href="../Yeild/Yeild.html"><div class="image"><img src="https://qph.cf2.quoracdn.net/main-qimg-07407e21a39d94abad6b541c42258e21" alt="Farming Tool 6"></div>
+      <div class="image-name">Other crops</div></a>
+  </div>
+</div>
+<a href="../../sidebar.html" class="back-to-home">Back to Home</a>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const gallery = document.querySelector('.gallery');
+    
+    // Attach click event listener to the gallery container
+    gallery.addEventListener('click', function(event) {
+      const clickedElement = event.target.closest('.gallery-item');
+      if (!clickedElement) return; // Exit if the clicked element is not a gallery item
+      
+      const toolName = clickedElement.querySelector('.image-name').innerText;
+      console.log(toolName); // Log the tool name to the console
+      
+      // Prevent the default behavior of the anchor element
+      event.preventDefault();
+      
+      // Construct the URL with the tool name as a query parameter
+      const redirectUrl = `../Yeild/Yeild.html?crop=${encodeURIComponent(toolName)}`;
+      
+      // Navigate to the constructed URL
+      window.location.href = redirectUrl;
+    });
+  });
+  </script>
+  
+  
+</body>
+  
+</html>

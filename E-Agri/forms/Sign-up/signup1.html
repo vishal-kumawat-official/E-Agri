@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | E-Agri</title>
+    <link rel="stylesheet" href="signup1.css"> <!-- Reference to the CSS file -->
+</head>
+<body>
+    <div class="container">
+        <div id="toast" class="toast">Account created successfully!</div>
+        <div class="signup-card"> <!-- Card-based form -->
+            <h2>Sign Up</h2>
+            <form action="" id="signup-form"> <!-- Use a clear ID -->
+                <!-- Input fields with consistent design -->
+
+                <div class="input-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Enter your name..." required>
+                </div>
+
+                <div class="input-group">   
+                    <label for="email">Your Email *</label>                                            
+                    <input type="email" id="email" placeholder="Your Email..." required>   
+                </div>                          
+    
+
+                <div class="input-group">
+                    <label for="no">Your Contact Number</label>
+                    <input type="number" id="no" placeholder="Your contact number..." required>
+                </div>
+
+                <div class="input-group">
+                    <label for="pass">Your Password *</label>
+                    <input type="password" id="pass" placeholder="Your password..." required>
+                </div>
+
+                <!-- Submit button with hover effect -->
+                <div class="input-group">
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+            </form>
+            <!-- Link to sign in -->
+            <div class="extra-links">
+                <p>Already have an account? <a href="../Log-in/login.html">Sign In</a></p>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Load external JavaScript -->
+    <script type="module" src="signup.js" defer></script>
+</body>
+</html>

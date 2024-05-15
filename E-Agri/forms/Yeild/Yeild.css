@@ -1,0 +1,202 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 90%;
+    height: 80vh;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow:  0px 5px 25px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inputBox{
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+    overflow: hidden; 
+}
+.container form .inputBox h4{
+    margin-top: 3px;
+}
+
+.inputBox input[type="text"], .inputBox input[type="text"], .inputBox input[type="date"], .inputBox input[type="date"]{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 0px 10px;
+    font-size: 16px;
+    
+    color: #444;
+}
+
+
+.inputBox button{
+    width: 100%;    
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background: rgb(0, 119, 255);
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+   
+    
+}
+
+.inputBox button:hover{
+    background: rgb(0, 17, 255);
+    transition: all 0.3s ease;
+}
+
+::placeholder{
+    font-size: 16px;
+}
+
+.alert{
+    width: 100%;
+    background: rgb(0, 255, 106);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 900;
+    display: none;
+}
+
+#heading{
+    color: blue !important;
+    text-align: center !important;
+}
+
+.explore-btn {
+
+
+    /* Base styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #74ebd5, #ACB6E5); /* Soft gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Container for the form */
+.container {
+    width: 100%;
+    max-width: 500px; /* Ensures the form doesn't get too wide */
+    padding: 20px;
+}
+
+/* Card-based design for the form */
+.form-card {
+    background-color: white;
+    border-radius: 10px; /* Rounded corners */
+    padding: 30px; /* Consistent padding */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+/* Heading style */
+.form-card h2 {
+    text-align: center;
+    margin-bottom: 20px; /* Space between heading and form */
+}
+
+/* Input groups for form fields */
+.input-group {
+    margin-bottom: 15px; /* Space between input fields */
+}
+
+.input-group label {
+    font-size: 14px; /* Label font size */
+    color: #333; /* Label color */
+    display: block; /* Labels take full width */
+}
+
+.input-group input, .input-group select {
+    width: 100%; /* Full width */
+    padding: 10px; /* Consistent padding */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    transition: border-color 0.3s; /* Smooth transition on focus */
+}
+
+.input-group input:focus, .input-group select:focus {
+    border-color: #74ebd5; /* Border color changes on focus */
+}
+
+/* Primary button styling */
+.btn-primary {
+    width: 100%; /* Full width */
+    padding: 12px; /* Padding for button */
+    background-color: #74ebd5; /* Primary color */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.btn-primary:hover {
+    background-color: #ACB6E5; /* Change background color on hover */
+}
+
+
+/* Toast notification styling for the top position */
+.toast {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stays in position regardless of scrolling */
+    top: 20px; /* Position at the top */
+    left: 50%; /* Centers the toast horizontally */
+    transform: translateX(-50%); /* Centers the toast relative to its parent */
+    background-color: greenyellow; /* Dark background */
+    color: black; /* White text */
+    padding: 10px 20px; /* Padding for comfort */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    animation: fadeout 4s forwards; /* Animation for fading out */
+}
+
+/* Animation for fading out */
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1; /* Keep visible */
+    }
+    100% {
+        opacity: 0; /* Fade out at the end */
+    }
+}

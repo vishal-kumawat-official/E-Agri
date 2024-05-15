@@ -1,0 +1,77 @@
+<!-- https://tractorguru.in/blog/wp-content/uploads/2021/12/Baler.jpg
+https://tractorguru.in/blog/wp-content/uploads/2021/12/Thresher.jpg
+https://5.imimg.com/data5/SELLER/Default/2022/9/QK/NJ/OG/41851534/agricultural-implements-500x500.jpg
+https://www.bewindia.co/wp-content/uploads/2023/09/Super-Seeder-4-in-1-.jpg  
+https://as1.ftcdn.net/v2/jpg/02/74/64/64/1000_F_274646414_V5lpbL6cdH4kd2UQfsY3fXVraAsrV9pr.jpg
+
+https://www.toolsvilla.com/assets/images/main/mob/main-banner.webp -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farming Tools Gallery</title>
+<link rel="stylesheet" type="text/css" href="GetEquipment.css">
+
+</head>
+<body>
+<div class="gallery-container">
+  <h2 class="gallery-header">Choose Farming Tool</h2>
+  <div class="gallery">
+  <div class="gallery-item">
+    <a href="../Equipment/Get/get.html"><div class="image"><img src="https://tractorguru.in/blog/wp-content/uploads/2021/12/Baler.jpg" alt="Farming Tool 1"></div>
+      <div class="image-name">Baler</div></a>
+  </div>
+  <div class="gallery-item">
+    <a href="../Equipment/Get/get.html"><div class="image"><img src="https://tractorguru.in/blog/wp-content/uploads/2021/12/Thresher.jpg" alt="Farming Tool 2"></div>
+      <div class="image-name">Thresher</div></a>
+  </div>
+  <div class="gallery-item">
+    <a href="../Equipment/Get/get.html"><div class="image"><img src="https://5.imimg.com/data5/SELLER/Default/2022/9/QK/NJ/OG/41851534/agricultural-implements-500x500.jpg
+        " alt="Farming Tool 3"></div>
+        <div class="image-name">Spring tyne tiller</div></a>
+  </div>
+  <div class="gallery-item">
+    <a href="../Equipment/Get/get.html"><div class="image"><img src="https://www.bewindia.co/wp-content/uploads/2023/09/Super-Seeder-4-in-1-.jpg" alt="Farming Tool 4"></div>
+      <div class="image-name">Super-Seeder</div></a>
+  </div>
+  <div class="gallery-item">
+    <a href="../Equipment/Get/get.html"><div class="image"><img src="https://as1.ftcdn.net/v2/jpg/02/74/64/64/1000_F_274646414_V5lpbL6cdH4kd2UQfsY3fXVraAsrV9pr.jpg" alt="Farming Tool 5"></div>
+      <div class="image-name">Gardning-tool</div></a>
+  </div>
+  <div class="gallery-item">
+    <a href="../Equipment/Get/get.html"><div class="image"><img src="https://www.toolsvilla.com/assets/images/main/mob/main-banner.webp" alt="Farming Tool 6"></div>
+      <div class="image-name">Other-tools</div></a>
+  </div>
+</div>
+<a href="../../sidebar.html" class="back-to-home">Back to Home</a>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const gallery = document.querySelector('.gallery');
+    
+    // Attach click event listener to the gallery container
+    gallery.addEventListener('click', function(event) {
+      const clickedElement = event.target.closest('.gallery-item');
+      if (!clickedElement) return; // Exit if the clicked element is not a gallery item
+      
+      const toolName = clickedElement.querySelector('.image-name').innerText;
+      console.log(toolName); // Log the tool name to the console
+      
+      // Prevent the default behavior of the anchor element
+      event.preventDefault();
+      
+      // Construct the URL with the tool name as a query parameter
+      const redirectUrl = `../Equipment/Get/get.html?tool=${encodeURIComponent(toolName)}`;
+      
+      // Navigate to the constructed URL
+      window.location.href = redirectUrl;
+    });
+  });
+  </script>
+  
+  
+</body>
+  
+</html>
